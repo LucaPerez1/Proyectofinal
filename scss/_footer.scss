@@ -1,0 +1,85 @@
+/*INICIO FOOTER*/
+footer {
+    width: 100%;
+    background-color: black;
+}
+
+.footerGrupo1{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding-top: 20px;
+}
+
+figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoFooter {
+	width: 350px;
+}
+
+.caja {
+	h3 {
+		color: white;
+		margin-bottom: 20px;
+		font-size: 1.6rem;
+	}
+	
+    a {
+		color: white;
+		margin-bottom: 10px;
+		text-decoration: none;
+		font-size: 1.2rem;
+	}
+	
+    li {
+		list-style: none;
+	}
+	
+    ul {
+		padding: 0px;
+	}
+}
+
+.redSocial {
+	
+    display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	
+    a {
+		text-decoration: none;
+		width: 45px;
+		height: 45px;
+		line-height: 45px;
+		margin-right: 10px;
+	}
+	
+    img {
+		width: 40px;
+
+		&:hover {
+			width: 52px;
+		}
+	}
+}
+
+
+.footerGrupo2 {
+    background-color: black;
+    color: rgb(145, 145, 145);
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+/*FIN FOOTER*/

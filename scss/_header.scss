@@ -1,0 +1,34 @@
+/*INICIO HEADER*/
+
+.logo {
+    width: 250px;
+    margin-left: 20px;
+}
+
+.encabezado {
+	background-color: black;
+	border-top: 10px solid rgb(239, 137, 55);
+    
+    nav {
+        ul {
+            li {
+                display: inline-block;
+                list-style: none;
+                margin: 0 20px;
+                
+                a {
+                    text-decoration: none;
+                    color: white;
+                    font-size: 1.2rem;
+                    font-weight: bold;
+
+                    &:hover {
+                        color: rgb(239, 137, 55);
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*FIN HEADER*/

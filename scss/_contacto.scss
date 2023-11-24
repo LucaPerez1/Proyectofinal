@@ -1,0 +1,75 @@
+/*INCIO CONTACTO*/
+/* datos */
+
+.datos {
+    background-color: rgb(239, 137, 55);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.mapa{
+    overflow:hidden;
+    padding-bottom:100%;
+    position:relative;
+    height:0;
+    
+    iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
+}
+
+
+
+.medios {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+   
+    img{
+        width: 40px;
+    }
+    
+    p {
+        margin-bottom:  0px;
+        margin-left: 10px;
+        font-size: 1rem;
+    }
+}
+
+.textoDatos {
+    font-size: 1.2;
+    margin: 15px 0px;
+    font-weight: 400;
+}
+
+.tituloDatos {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* formulario */
+
+input, textarea, select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin: 0px 0px 15px 0px;
+}
+
+label {
+    display: block;
+    margin: 0px 0px 10px 0px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+/* FIN DE SECCION CONTACTO */

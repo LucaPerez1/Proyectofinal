@@ -1,0 +1,64 @@
+/* INICIO TEXTOS Y TITULOS */
+
+.titulos {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.textoPrincipal {
+    font-size: 1.2rem; 
+    margin: 0px 70px;
+}
+/* FIN TEXTOS Y TITULOS */
+
+/* INICIO BTN */ 
+
+.btn-primary {
+    background-color: rgb(239, 137, 55);
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    
+    &:hover {
+        background-color: rgb(202, 101, 19);
+        color: white;
+    }
+}
+
+/*FIN BTN*/
+
+/* INICIO PARALLAX */
+.parallax {
+    background-image: url(../img/Parallax2.jpg);
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+}
+
+.textoParallax {
+    background-color: rgba(255, 255, 255, 0.616);
+    padding: 30px;
+    
+    h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+    }
+    
+    p {
+        font-size: 1.2rem;
+        margin: 20px 0px;
+    }
+}
+
+
+/* FIN PARALLAX */
