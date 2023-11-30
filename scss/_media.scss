@@ -10,8 +10,13 @@
  
      .caja {
 
+        ul {
+            padding: 0px;
+        }
+
          h3 {
              text-align: center;
+             padding: 0px;
          }
      
          li {
@@ -31,15 +36,18 @@
      /* header */
      .encabezado a {
          text-decoration: none;
-         color: white;
          font-size: 1rem;
          font-weight: bold;
      }
-     
- 
-     .medios img{
-         width: 32px;
-     }
- 
+
+ }
+
+ @media (max-width:1200px) {
+    /*IMAGENES DE PROYECTOS*/
+
+    .cardProyectos {
+        filter: grayscale(0%);
+    }
+
  }
  /*FIN MEDIA*/

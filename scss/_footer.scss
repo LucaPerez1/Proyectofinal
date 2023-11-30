@@ -1,7 +1,7 @@
 /*INICIO FOOTER*/
 footer {
     width: 100%;
-    background-color: black;
+    background-color: $color-secundario;
 }
 
 .footerGrupo1{
@@ -22,29 +22,38 @@ figure {
 }
 
 .logoFooter {
-	width: 350px;
+	width: 300px;
+	padding-right: 30px;
 }
 
 .caja {
 	h3 {
-		color: white;
+		color: $color-blanco;
 		margin-bottom: 20px;
-		font-size: 1.6rem;
+		@include textoConParametos (1.4rem, 700);
+		padding-left: 30px;
+		padding-top: 10px;
 	}
 	
     a {
-		color: white;
+		color: $color-blanco;
 		margin-bottom: 10px;
 		text-decoration: none;
-		font-size: 1.2rem;
+		@include textoConParametos (1.2rem, 300);
+
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 	
     li {
 		list-style: none;
+		
 	}
 	
     ul {
-		padding: 0px;
+		padding-left: 30px;
+		margin: 0px;
 	}
 }
 
@@ -52,7 +61,7 @@ figure {
 	
     display: flex;
 	flex-direction: row;
-	justify-content: start;
+	justify-content: center;
 	align-items: center;
 	
     a {
@@ -60,25 +69,29 @@ figure {
 		width: 45px;
 		height: 45px;
 		line-height: 45px;
-		margin-right: 10px;
+		margin-right: 18px;
+		
 	}
 	
-    img {
-		width: 40px;
-
+	svg {
+		width: 32px;
+		height: 32px;
+		transition: 0.4s;
+	
 		&:hover {
-			width: 52px;
+			width: 48px;
+			height: 48px;
 		}
 	}
 }
 
 
 .footerGrupo2 {
-    background-color: black;
+    background-color: $color-secundario;
     color: rgb(145, 145, 145);
     padding: 10px 10px;
     text-align: center;
-    font-size: 1rem;
+    @include textoConParametos (1rem, 400);
 }
 
 

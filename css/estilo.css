@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -10,24 +10,24 @@ body {
 
 /*INICIO HEADER*/
 .logo {
-  width: 250px;
+  width: 200px;
   margin-left: 20px;
 }
 
 .encabezado {
   background-color: black;
-  border-top: 10px solid rgb(239, 137, 55);
+  border-top: 5px solid rgb(239, 137, 55);
 }
 .encabezado nav ul li {
   display: inline-block;
   list-style: none;
-  margin: 0 20px;
+  margin: 0 25px;
 }
 .encabezado nav ul li a {
   text-decoration: none;
   color: white;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 .encabezado nav ul li a:hover {
   color: rgb(239, 137, 55);
@@ -58,31 +58,40 @@ figure {
 }
 
 .logoFooter {
-  width: 350px;
+  width: 300px;
+  padding-right: 30px;
 }
 
 .caja h3 {
   color: white;
   margin-bottom: 20px;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding-left: 30px;
+  padding-top: 10px;
 }
 .caja a {
   color: white;
   margin-bottom: 10px;
   text-decoration: none;
   font-size: 1.2rem;
+  font-weight: 300;
+}
+.caja a:hover {
+  text-decoration: underline;
 }
 .caja li {
   list-style: none;
 }
 .caja ul {
-  padding: 0px;
+  padding-left: 30px;
+  margin: 0px;
 }
 
 .redSocial {
   display: flex;
   flex-direction: row;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
 }
 .redSocial a {
@@ -90,13 +99,16 @@ figure {
   width: 45px;
   height: 45px;
   line-height: 45px;
-  margin-right: 10px;
+  margin-right: 18px;
 }
-.redSocial img {
-  width: 40px;
+.redSocial svg {
+  width: 32px;
+  height: 32px;
+  transition: 0.4s;
 }
-.redSocial img:hover {
-  width: 52px;
+.redSocial svg:hover {
+  width: 48px;
+  height: 48px;
 }
 
 .footerGrupo2 {
@@ -105,31 +117,35 @@ figure {
   padding: 10px 10px;
   text-align: center;
   font-size: 1rem;
+  font-weight: 400;
 }
 
 /*FIN FOOTER*/
-/* INICIO TEXTOS Y TITULOS */
+/* INICIO TEXTOS Y TITULOS GENERALES */
 .titulos {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: 900;
   text-align: center;
   margin-top: 50px;
   margin-bottom: 30px;
-  font-weight: 700;
 }
 
 .textoPrincipal {
   font-size: 1.2rem;
+  font-weight: 400;
   margin: 0px 70px;
+  margin-bottom: 10px;
 }
 
-/* FIN TEXTOS Y TITULOS */
+/* FIN TEXTOS Y TITULOS GENERALES */
 /* INICIO BTN */
 .btn-primary {
   background-color: rgb(239, 137, 55);
   color: black;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 500;
   border: none;
+  box-shadow: 0px 3px 8px;
 }
 .btn-primary:hover {
   background-color: rgb(202, 101, 19);
@@ -157,10 +173,11 @@ figure {
 }
 .textoParallax h2 {
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 500;
 }
 .textoParallax p {
   font-size: 1.2rem;
+  font-weight: 400;
   margin: 20px 0px;
 }
 
@@ -170,39 +187,68 @@ figure {
   background-color: rgb(24, 24, 24);
   padding: 40px 70px;
   margin: 45px 0px;
+  box-shadow: 0px 8px 10px;
 }
 .contenedorInformacion h2 {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
+  font-weight: 700;
   margin-bottom: 30px;
   color: white;
   border-bottom: 5px solid rgb(239, 137, 55);
   display: inline-block;
   padding-bottom: 14px;
-  font-weight: 700;
 }
 .contenedorInformacion p {
   font-size: 1.2rem;
+  font-weight: 300;
   color: white;
+}
+.contenedorInformacion strong {
+  font-weight: 700;
 }
 
 /* FIN SECCION NOSOSTROS */
-.tituloServicios {
+/*INICIO SERVICIOS*/
+.cardServicios {
+  max-width: 100%;
+  background-color: #f8f8f8;
+  border-radius: 8px;
+  margin: 0px;
+  padding: 0px;
+  box-shadow: 0px 2px 6px #494949;
+  transition: all 0.5s;
+}
+.cardServicios img {
+  border-radius: 8px 8px 0px 0px;
+  max-height: 250px;
+  height: 250px;
+  width: 100%;
+}
+.cardServicios h3 {
   text-align: center;
   font-size: 1.4rem;
-  font-weight: 600;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.cardServicios p {
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 0px 15px 15px 15px;
+}
+.cardServicios:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px;
 }
 
-.textoServicios {
-  font-size: 1.2rem;
-  font-weight: 200;
-}
-
+/*FIN SERVICIOS*/
 /*INICIO PROYECTOS*/
 .tituloProyecto {
   background-color: rgba(0, 0, 0, 0.753);
   padding: 5px;
   margin: 0px;
   font-size: 1rem;
+  font-weight: 500;
 }
 
 .card-img-overlay {
@@ -214,6 +260,14 @@ figure {
 .cardProyectos {
   padding: 0px;
   border: none;
+  box-shadow: 0px 6px 10px #494949;
+  filter: grayscale(65%);
+  transition: all 0.7s;
+  cursor: pointer;
+}
+.cardProyectos:hover {
+  filter: grayscale(0%);
+  transform: translateY(-10px);
 }
 
 .card-img {
@@ -224,11 +278,15 @@ figure {
 /*INCIO CONTACTO*/
 /* datos */
 .datos {
-  background-color: rgb(239, 137, 55);
+  background: linear-gradient(to right, rgb(239, 137, 55), #e4ac20);
   padding: 20px;
   border-radius: 15px;
+  max-height: 800px;
+  box-shadow: 0px 2px 6px;
 }
 
+/* right, #FF512F, #F09819 */
+/* #FF8008, #FFC837*/
 .mapa {
   overflow: hidden;
   padding-bottom: 100%;
@@ -241,34 +299,41 @@ figure {
   height: 100%;
   width: 100%;
   position: absolute;
+  max-height: 440px;
 }
 
 .medios {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
-.medios img {
-  width: 40px;
+.medios svg {
+  width: 25px;
+  height: 25px;
+  color: black;
 }
 .medios p {
   margin-bottom: 0px;
-  margin-left: 10px;
+  margin-left: 25px;
   font-size: 1rem;
+  font-weight: 400;
+  color: black;
 }
 
 .textoDatos {
-  font-size: 1.2;
-  margin: 15px 0px;
+  font-size: 1.2rem;
   font-weight: 400;
+  margin: 15px 0px;
+  color: black;
 }
 
 .tituloDatos {
   font-size: 1.4rem;
-  font-weight: bold;
+  font-weight: 700;
   margin-top: 10px;
   text-align: center;
+  color: black;
 }
 
 /* formulario */
@@ -279,14 +344,15 @@ input, textarea, select {
   border: 1px solid black;
   border-radius: 5px;
   font-size: 1rem;
-  margin: 0px 0px 15px 0px;
+  font-weight: 300;
+  margin: 0px 0px 20px 0px;
 }
 
 label {
   display: block;
   margin: 0px 0px 10px 0px;
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 /* FIN DE SECCION CONTACTO */
@@ -299,8 +365,12 @@ label {
     grid-gap: 30px;
     padding: 20px 0px;
   }
+  .caja ul {
+    padding: 0px;
+  }
   .caja h3 {
     text-align: center;
+    padding: 0px;
   }
   .caja li {
     text-align: center;
@@ -314,12 +384,14 @@ label {
   /* header */
   .encabezado a {
     text-decoration: none;
-    color: white;
     font-size: 1rem;
     font-weight: bold;
   }
-  .medios img {
-    width: 32px;
+}
+@media (max-width: 1200px) {
+  /*IMAGENES DE PROYECTOS*/
+  .cardProyectos {
+    filter: grayscale(0%);
   }
 }
 /*FIN MEDIA*/
