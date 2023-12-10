@@ -1,4 +1,9 @@
 /*INICIO SERVICIOS*/
+.contenedorServicios{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .cardServicios {
     max-width: 100%;
     background-color: #f8f8f8;
@@ -23,7 +28,7 @@
     }
 
     p {
-        @include textoConParametos (1rem, 400);
+        @include textoConParametos (1rem, 300);
         padding: 0px 15px 15px 15px;
     }
 

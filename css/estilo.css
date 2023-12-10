@@ -78,7 +78,7 @@ figure {
   font-weight: 300;
 }
 .caja a:hover {
-  text-decoration: underline;
+  text-decoration: underline 2px;
 }
 .caja li {
   list-style: none;
@@ -128,13 +128,14 @@ figure {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .textoPrincipal {
   font-size: 1.2rem;
   font-weight: 400;
-  margin: 0px 70px;
-  margin-bottom: 10px;
+  margin: 0px 50px;
 }
 
 /* FIN TEXTOS Y TITULOS GENERALES */
@@ -168,6 +169,7 @@ figure {
 }
 
 .textoParallax {
+  margin: 50px 0px;
   background-color: rgba(255, 255, 255, 0.616);
   padding: 30px;
 }
@@ -182,10 +184,53 @@ figure {
 }
 
 /* FIN PARALLAX */
+/* INICIO CARDS TESTIMONIO */
+.contendorCardTestimonio {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cardTestimonio {
+  background-color: rgb(24, 24, 24);
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+.cardTestimonio p {
+  color: white;
+  font-size: 1.2;
+  font-weight: 300;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.perfil img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.textoPerfil {
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+.textoPerfil .fecha {
+  color: rgb(145, 145, 145);
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+/* FIN CARDS TESTIMONIO */
 /* INICIO SECCCION NOSOSTROS */
 .contenedorInformacion {
   background-color: rgb(24, 24, 24);
-  padding: 40px 70px;
+  padding: 40px 50px;
   margin: 45px 0px;
   box-shadow: 0px 8px 10px;
 }
@@ -209,6 +254,11 @@ figure {
 
 /* FIN SECCION NOSOSTROS */
 /*INICIO SERVICIOS*/
+.contenedorServicios {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .cardServicios {
   max-width: 100%;
   background-color: #f8f8f8;
@@ -233,7 +283,7 @@ figure {
 }
 .cardServicios p {
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: 300;
   padding: 0px 15px 15px 15px;
 }
 .cardServicios:hover {
@@ -285,8 +335,6 @@ figure {
   box-shadow: 0px 2px 6px;
 }
 
-/* right, #FF512F, #F09819 */
-/* #FF8008, #FFC837*/
 .mapa {
   overflow: hidden;
   padding-bottom: 100%;
@@ -380,12 +428,6 @@ label {
   }
   .logoFooter {
     width: 250px;
-  }
-  /* header */
-  .encabezado a {
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
   }
 }
 @media (max-width: 1200px) {

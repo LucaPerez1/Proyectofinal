@@ -42,7 +42,7 @@ figure {
 		@include textoConParametos (1.2rem, 300);
 
 		&:hover {
-			text-decoration: underline;
+			text-decoration: underline 2px;
 		}
 	}
 	
