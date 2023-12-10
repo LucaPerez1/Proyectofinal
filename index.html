@@ -165,9 +165,9 @@
 
   <div class="container-fluid">
     <div class="row m-3 gy-4 gx-3 justify-content-center">
-      <div class="col-xl-6 col-md-6 col-sm-12" data-aos="fade-right">
+      <div class="col-xl-6 col-md-6 col-sm-12 over">
 
-        <div class="card cardProyectos text-bg-dark">
+        <div class="card cardProyectos text-bg-dark" data-aos="fade-right">
           <img src="img/Casa M.jpg" class="card-img" alt="Casa M">
           <div class="card-img-overlay">
             <h3 class="tituloProyecto">Casa M / Residencia / 200m²</h3>
@@ -175,9 +175,9 @@
         </div>
       </div>
 
-      <div class="col-xl-6 col-md-6 col-sm-12" data-aos="fade-left">
+      <div class="col-xl-6 col-md-6 col-sm-12 over">
 
-        <div class="card cardProyectos text-bg-dark">
+        <div class="card cardProyectos text-bg-dark" data-aos="fade-left">
           <img src="img/Casa R.jpg" class="card-img" alt="Casa R">
           <div class="card-img-overlay">
             <h3 class="tituloProyecto">Casa R/ Remodelacion de residencia / 300m²</h3>
@@ -185,9 +185,9 @@
         </div>
       </div>
 
-      <div class="col-xl-6 col-md-6 col-sm-12" data-aos="fade-right">
+      <div class="col-xl-6 col-md-6 col-sm-12 over">
 
-        <div class="card cardProyectos text-bg-dark">
+        <div class="card cardProyectos text-bg-dark"  data-aos="fade-right">
           <img src="img/Casa B.jpg" class="card-img" alt="Casa B">
           <div class="card-img-overlay">
             <h3 class="tituloProyecto">Casa B / Remodelacion de residencia / 450m²</h3>
@@ -195,9 +195,9 @@
         </div>
       </div>
 
-      <div class="col-xl-6 col-md-6 col-sm-12" data-aos="fade-left">
+      <div class="col-xl-6 col-md-6 col-sm-12 over">
 
-        <div class="card cardProyectos text-bg-dark">
+        <div class="card cardProyectos text-bg-dark" data-aos="fade-left">
           <img src="img/Casa F.jpg" class="card-img" alt="Casa F">
           <div class="card-img-overlay">
             <h3 class="tituloProyecto">Casa F / Residencia / 300m²</h3>
@@ -381,7 +381,10 @@
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script>
-    AOS.init();
+    AOS.init({
+      duration: 1200,
+      once: true,
+    });
   </script>
 
 </body>
